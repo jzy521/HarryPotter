@@ -1,5 +1,5 @@
 
-## This is Eric's harry potter project
+## This is Eric's harry potter project. Do you know the way 
 
 ## Available Scripts
 
@@ -28,7 +28,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run eject` Herro im chinese
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
