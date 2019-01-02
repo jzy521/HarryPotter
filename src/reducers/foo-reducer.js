@@ -1,15 +1,8 @@
 // file: `src/js/reducers/foo-reducer.js`
 // our top-level state key is `foo`
-const defaultFoo = {
-  someIndex: 0,
-  bar: 'some string',
-  baz: {
-    key1: 'another string',
-    key2: ['an', 'array', 'of', 'strings'],
-    key3: {
-      another: 'key'
-    }
-  }
+const defaultState = {
+  id: 0,
+  text: 'some string'
 };
 
 /**
@@ -19,17 +12,17 @@ const defaultFoo = {
  * @param {Action} action
  * @return {Object}
  */
-export default function(fooState = defaultFoo, action) {
+export default function (state = defaultState, action) {
   switch (action.type) {
     // this action increments 'someIndex'
-    case 'FOO_ACTION_1':
-      fooState.someIndex++;
-
-      return {
-        ...fooState
-      };
+    case 'ADD_TODO':
+      state.id++;
+      let result = {};
+      Object.assign(result, state, {id: state.id++, text: action.text});
+      console.log('state: 222 '+ JSON.stringify(result));
+      return result;
 
     default:
-      return fooState;
+      return state;
   }
 }

@@ -1,21 +1,7 @@
-/**
- * @return {ActionObject}
- */
-export function stubAction() {
-  return {
-    type: 'STUB_ACTION'
-  };
-}
+let nextTodoId = 0
+export const addTodo = text => ({
+  type: 'ADD_TODO',
+  id: nextTodoId++,
+  text
+});
 
-/**
- * @param {String} code
- * @return {ActionObject}
- */
-export function stubPureAction(code) {
-  return {
-    type: 'STUB_CODE',
-    code
-  };
-}
-
-export default stubAction;

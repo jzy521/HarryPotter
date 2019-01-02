@@ -1,17 +1,15 @@
 import { connect } from 'react-redux';
 import Harrypotter from '../components/harrypotter';
-
+import { addTodo } from '../actions';
 /**
  * boilerplate to enable redux
  * @param {Function} dispatch
  * @return {Object}
  */
 const mapDispatchToProps = dispatch => ({
-  fooTriggerUpdateState: text => {
-    dispatch({
-      type: 'FOO_UPDATE',
-      text
-    });
+  add: text => {
+    console.log('add action !!! '+ text);
+    dispatch(addTodo(text));
   }
 });
 
@@ -21,11 +19,13 @@ const mapDispatchToProps = dispatch => ({
  * @param {Object} props
  * @return {Object}
  */
-const mapStateToProps = (state, props) => ({
-  ...props,
-  foo: state.foo,
-  bar: state.bar
-});
+const mapStateToProps = (state, props) => {
+  console.log('mapStateToProps '+ JSON.stringify(props));
+  return ({
+  id: state.fooReducer.id,
+  text: state.fooReducer.text
+  })
+};
 
 export default connect(
   mapStateToProps,

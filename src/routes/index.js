@@ -1,7 +1,8 @@
 import React from 'react';
 import { Router, Route, Switch,Link } from 'react-router-dom';
 import history from './history';
-import Harrypotter from '../containers/foo';
+
+import Harrypotter from '../containers/harrypotter';
 import {Home, Characters, Theories, AboutUs} from '../components';
 
 export const Nav = () => (
