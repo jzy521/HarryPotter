@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import {HeaderNav} from './headerNav';
 import cover1 from '../asset/img/bookcover/HP_hc_new_1.jpeg';
 import cover2 from '../asset/img/bookcover/HP_hc_new_2.jpeg';
 import cover3 from '../asset/img/bookcover/HP_hc_new_3.jpeg';
@@ -12,16 +13,8 @@ export const Harrypotter = (props) => {
 console.log(props);
   return (
     <div>
-      <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/harrypotter">harrypotter</Link>
-            </li>
-           
-          </ul>
 
+        <HeaderNav/>
                <div className="App flex-container">
            <img src={cover1}  />
             <img src={cover2} />

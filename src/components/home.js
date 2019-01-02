@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {HeaderNav} from './headerNav';
 import cover1 from '../asset/img/bookcover/HP_hc_new_1.jpeg';
 import cover2 from '../asset/img/bookcover/HP_hc_new_2.jpeg';
 import cover3 from '../asset/img/bookcover/HP_hc_new_3.jpeg';
@@ -11,16 +12,7 @@ export const Home = () =>{
   console.log('home !!!! ');
   return (
     <div className="App flex-container">
-       <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/harrypotter">harrypotter</Link>
-            </li>
-           
-          </ul>
-
+     <HeaderNav/>
      <div>
       {/* Block holding header */}
       <div className="header2">
@@ -62,9 +54,9 @@ export const Home = () =>{
             </h2>
             </div>
             {/* This part is wrong. Change it to be correct if you can */}
-            <div className="TitleDescription profile">
+            {/* <div className="TitleDescription profile">
               <h2>Profile goes here</h2>
-            </div>
+            </div> */}
             
       </div>
       {/* block holding section title */}
