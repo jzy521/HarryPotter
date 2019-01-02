@@ -6,12 +6,16 @@ export const HeaderNav = (props) => {
          <div className="header">         
           {/* categories */}
             <div><h2 className="TitleDescription">
-              Characters
+                <Link to="/">Home</Link>
+            </h2>
+            </div>
+            <div><h2 className="TitleDescription">
+                <Link to="/characters">Characters</Link>
             </h2>
             </div>
             <div>
             <h2 className="TitleDescription">
-              Theories
+                <Link to="/theories">Theories</Link>
             </h2>
             </div>
             <div>
@@ -21,12 +25,12 @@ export const HeaderNav = (props) => {
             </div>
             <div>
             <h2 className="TitleDescription">
-              Books
+                <Link to="/harrypotter">Books</Link>
             </h2>
             </div>
             <div>
             <h2 className="TitleDescription">
-              About The Creators
+              <Link to="/aboutUs">About The Creators</Link>
             </h2>
             </div>
             {/* This part is wrong. Change it to be correct if you can */}
@@ -35,21 +39,6 @@ export const HeaderNav = (props) => {
             </div> */}
             
       </div>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/harrypotter">harrypotter</Link>
-            </li>
-            <li>
-              <Link to="/characters">characters</Link>
-            </li>
-            <li>
-                <Link to="/theories">Theories</Link>
-            </li>
-          </ul>
-      
     </div>
   )
 };

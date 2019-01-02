@@ -12,7 +12,6 @@ export const Home = () =>{
   console.log('home !!!! ');
   return (
     <div className="App flex-container">
-     <HeaderNav/>
      <div>
       {/* Block holding header */}
       <div className="header2">
@@ -27,9 +26,9 @@ export const Home = () =>{
         </div>
       </div>
       {/* block holding nav(another header) */}
-      <div className="header">         
+      {/* <div className="header">         
           {/* categories */}
-            <div><h2 className="TitleDescription">
+            {/* <div><h2 className="TitleDescription">
               Characters
             </h2>
             </div>
@@ -56,10 +55,11 @@ export const Home = () =>{
             {/* This part is wrong. Change it to be correct if you can */}
             {/* <div className="TitleDescription profile">
               <h2>Profile goes here</h2>
-            </div> */}
+            </div> 
             
-      </div>
+      </div> */}
       {/* block holding section title */}
+      <HeaderNav/>
       <div className="whatWeDo">
       <h1 className="whatWeDotext">What We Do</h1>
       </div>
@@ -81,14 +81,14 @@ export const Home = () =>{
       <div className="gryffindor"></div>
       </div> 
       
-    <img src={cover1} alt="">
+    {/* <img src={cover1} alt="">
     </img>
     <img src={cover2} alt=""/>
     <img src={cover3} alt=""/>
     <img src={cover4} alt=""/>
     <img src={cover5} alt=""/>
     <img src={cover6} alt=""/>
-    <img src={cover7} alt=""/>
+    <img src={cover7} alt=""/> */}
   </div>
   );
 } 
