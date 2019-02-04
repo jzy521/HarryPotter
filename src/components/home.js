@@ -12,46 +12,10 @@ export const Home = () => {
   console.log('home !!!! ');
   return (
     <div className="App flex-container">
-      <div>
-        {/* Block holding header */}
-        <div className="header2">
-          {/* block holding wbsite name */}
-
-          <div className="header2">
-            {/* block holding wbsite name */}
-            <div className="header2">
-              <h1>Website Name</h1>
-            </div>
-            {/* block holding description */}
-            <div className="special">
-              <h3>A HARRY POTTER DATABASE. DISCUSS, THINK AND CHANGE
-          </h3>
-            </div>
-          </div>
-        </div>
+      <div className="topbar"></div>
+      <h1>hi</h1>
         <HeaderNav />
-        <div className="whatWeDo">
-          <h1 className="whatWeDotext">What We Do</h1>
-        </div>
-        <div className="flexing">
-          <div className="leftBorder"></div>
-          <div className="mainArticle">
-            <h1 className="headingHome">
-              Statement goes here
-            </h1>
-            <h3>Explanation goes here</h3>
-            <h3>Phone #</h3>
-            <h3>Email</h3>
-          </div>
-          <div className="rightBorder">
-          </div>
-        </div>
-        {/* block holding footer */}
-        <div className="gryffindor"></div>
-      </div>
-      {/* block holding footer */}
-      <div className="gryffindor"></div>
-    </div> 
+    </div>
   );
 }
 

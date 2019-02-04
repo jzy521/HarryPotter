@@ -7,13 +7,20 @@ export const Characters = (props) => {
 console.log(props);
   return (
     <div>
-
-    <HeaderNav/>
-     <div className="App flex-container">
-           <img src={cover1}  />
-        
-       </div>
-      
+      <HeaderNav/>
+      <table className="ch">
+        <th>
+          <a href="harry.js">
+          <img className="harry" src="https://tinyurl.com/y9ssao3l"></img>
+          </a>
+          <a href="harry.js">
+          <img className="harry" src="https://tinyurl.com/y9ssao3l"></img>
+          </a>
+          <a href="harry.js">
+          <img c="harry" src="https://tinyurl.com/y9ssao3l"></img>
+          </a>
+        </th>
+      </table>
     </div>
   )
 };

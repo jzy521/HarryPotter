@@ -15,46 +15,13 @@
   text-align: center;
   line-height: 400px;
 }
-
-.Title{
-  text-align:center;
-  font-family:Trebuchet MS;
-  color: black;
-  line-height:100%;
-  height:100%;
-}
-.TitleDescription{
-  text-align:center;
-  font-family: Trebuchet MS;
-  color:black;
-  font-size:120%;
-}
-.TitleDescription2{
-  text-align:center;
-  font-family: Trebuchet MS;
-  color:grey;
-  font-size:120%;
-}
-.header {
-  height:50px;
-  width: 1450px;
+.topbar{
+  width:100%;
+  height:150px;
+  background-color:blue;
+  border:0px;
+  margin:0px;
   padding:0px;
-  background-color:rgb(189, 4, 4);
-  /* -webkit-animation-name: example; 
-  -webkit-animation-duration: 1000000000s;  */
-  /* animation-name: example;
-  animation-duration: 100000000s; */
-  display: flex;
-  flex-direction: row;
-  position: -webkit-sticky;
-  position: sticky;
-}
-
-.header > div {
-  padding-right: 10px;
-  padding-left: 10px;
-  border-left: 3px solid black;
-  border-color: black;
 }
 
 
@@ -72,100 +39,3 @@
   50%  {background-color: blue;}
   100% {background-color: green;}
 } */
-
-.CharacterHeading{
-  font-family:Trebuchet MS;
-  color:black
-}
-
-.header2{
-  font-family:Arial;
-  height:60px;
-  padding:0px;
-  background-color:rgba(255, 255, 255, 0.726);
-  display: flex;
-  flex-direction: row;
-  color: Grey
-}
-.special{
-  position: absolute;
-  right: 10px;
-}
-
-.whatWeDo{
-  background-color:green;
-
-}
-.whatWeDotext{
-  text-align:center;
-  color:black;
-  font-family:Cursive;
-  font-size:60px;
-  margin: 0px;
-}
-.leftBorder {
-  height:700px;
-  width: 160px;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:yellow;
-  overflow-x: hidden;
-  padding-top: 20px;
-  position: relative;
-}
-.rightBorder {
-  height:700px;
-  width: 160px;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color:Blue;
-  overflow-x: hidden;
-  padding-top: 20px;
-  position: relative;
-}
-.mainArticle{
-  width:1130px;
-  height:700;
-  background-color:lightgray;
-}
-.flexing{
-  display: flex;
-  flex-direction: row;
-}
-.headingHome{
-  text-align:center;
-  font-family:Trebuchet MS;
-}
-.gryffindor{
-  width:100%;
-  height:160px;
-  background-color: red;
-}
-.profile{
-  position: absolute;
-  right: 10px;
-}
-/* x */
-.booksSide{
-  height:1000px;
-  width: 220px;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:lightgray;
-  overflow-x: hidden;
-  padding-top: 20px;
-  top:77px;
-  position: fixed;
-}
-.bookList{
-  list-style-type:none;
-  font-family: Trebuchet MS;
-  text-align: left;
-  padding:5px;
-  border:5px;
-  margin:5px;
-}
