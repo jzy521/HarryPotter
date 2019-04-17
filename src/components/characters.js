@@ -7,7 +7,12 @@ export const Characters = (props) => {
 console.log(props);
   return (
     <div>
-      <HeaderNav/>
+      <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <Link to="/character"><li><a href="#news">Character</a></li></Link>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
       <table className="ch">
         <th>
           <a href="harry.js">
@@ -21,7 +26,11 @@ console.log(props);
           </a>
         </th>
       </table>
+      <div className="endbar">
+      <h1>dfhsdfhjsdfjdsfj</h1>
+      </div>
     </div>
+    
   )
 };
 

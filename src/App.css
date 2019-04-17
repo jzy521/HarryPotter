@@ -17,13 +17,120 @@
 }
 .topbar{
   width:100%;
-  height:150px;
-  background-color:blue;
-  border:0px;
+  height:100px;
+  background-color:#002a32;
   margin:0px;
-  padding:0px;
+}
+.hi{
+  width:100px;
+  height:15px;
+  background-color:green;
+  margin:0px;
+}
+html { 
+  background: url(crimesheader.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin:0px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00556b;
+  width:100%;
+  font-family: 'Exo 2', sans-serif;
+  height:60px;
+  font-size:20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+li {
+  float: left;
 }
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(26, 83, 100);
+}
+
+.active {
+  background-color: #4CAF50;
+}
+body{
+  margin:0px;
+}
+.first{
+  background-color: white;
+  width:600px;
+  height:400px;
+  margin:20px;
+  position: absolute;
+  right:750px;
+  top:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.781), 0 6px 20px 0 rgba(0, 0, 0, 0.835);
+  border-radius: 7px;
+}
+.second{
+  background-color: white;
+  width:600px;
+  height:400px;
+  margin:20px;
+  position: absolute;
+  left:750px;
+  top:800px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.781), 0 6px 20px 0 rgba(0, 0, 0, 0.835);
+  border-radius: 7px;
+}
+.last{
+  background-color: white;
+  width:600px;
+  height:400px;
+  margin:20px;
+  position: absolute;
+  right:750px;
+  top:1400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.781), 0 6px 20px 0 rgba(0, 0, 0, 0.835);
+  border-radius: 7px;
+}
+.endbar{
+  background-color:#00556b;
+  width: 100%;
+  height:200px;
+  top:2000px;
+  position:absolute
+}
+/* .main{
+  margin: 20px;
+  background-color:black;
+  height:1000px;
+  width:100%;
+  opacity: 0.5;
+}
+.greeting{
+  width:100%;
+  height: 50px;
+  font-weight: bold;
+  color: #000000;
+  background-color:green;
+  margin: 20px;
+}
+.whole{
+  width:100%;
+  height:100%;
+  margin: 20px;
+} */
 
 /* @-webkit-keyframes example {
   0%   {background-color: red;}

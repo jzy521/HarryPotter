@@ -26,7 +26,9 @@ console.log(props);
       </ul>
     </div> 
        </div>
-      
+       <div className="endbar">
+      <h1>dfhsdfhjsdfjdsfj</h1>
+      </div>
     </div>
   )
 };
